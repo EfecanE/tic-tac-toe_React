@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #EFC050;
+}
+  
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  text-align: center;
+  font-size: 50px;
+  color: purple;
+  margin-top: 250px;
+  margin-bottom: 25px;
+}
+
+.square {
+  background: purple;
+  border: 1px solid #EFC050;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 150px;
+  padding: 0;
+  text-align: center;
+  width: 150px;
+  color: #EFC050;
+  font-family: 'Silkscreen', cursive;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  width: 250px;
+}
+
+.restart {
+  color: #EFC050;
+  font-size: 20px;
+  background: purple;
+  padding: 5px 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: 'Silkscreen', cursive;
+}
+
+@media (max-width: 1350px) {
+  .square {
+    width: 100px;
+    height: 100px;
+  }
+
+  .restart {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .status {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  
 }
