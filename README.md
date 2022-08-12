@@ -2,7 +2,7 @@
 
 ### You can test and play --> https://efecane.github.io/tic-tac-toe_React/
 
-![tictactoe](https://user-images.githubusercontent.com/105597814/184352781-e871b38f-1356-46be-839d-15db11676785.png)
+![tictactoe](https://user-images.githubusercontent.com/105597814/184353011-816b3cfe-6886-4507-9079-6a71d2ceafb6.png)
 
 ### Techonologies
 
